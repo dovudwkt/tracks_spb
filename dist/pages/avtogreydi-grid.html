@@ -34,13 +34,6 @@
         <div class="humberger__menu__logo">
             <a href="#"><img src="" alt="">LOGO</a>
         </div>
-        <div class="humberger__menu__cart">
-            <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-            </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
-        </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="img/language.png" alt="">
@@ -56,19 +49,18 @@
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
-            <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop-grid.html">Shop</a></li>
+            <ul> <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                <li class="active"><a href="../shop-grid.html">КАТАЛОГ</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
+                        <li><a href="../shop-details.html">Shop Details</a></li>
+                        <li><a href="../shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="../checkout.html">Check Out</a></li>
+                        <li><a href="../blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="../blog.html">НАШИ УСЛУГИ</a></li>
+                <li><a href="../contact.html">КОНТАКТЫ</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -88,7 +80,7 @@
     <!-- Humberger End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
+    <header class="header mb-2">
         <div class="header__top">
             <div class="container">
                 <div class="row">
@@ -117,9 +109,9 @@
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
-                            <div class="header__top__right__auth">
+                            <!-- <div class="header__top__right__auth">
                                 <a href="#"><i class="fa fa-user"></i> Login</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -132,7 +124,7 @@
                         <a href="./index.html"><img src="" alt="">LOGO</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-9">
                     <nav class="header__menu">
                         <ul>
                             <li><a href="../index.html">ГЛАВНАЯ</a></li>
@@ -150,15 +142,6 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
-                    <div class="header__cart">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                        </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
-                    </div>
-                </div>
             </div>
             <div class="humberger__open">
                 <i class="fa fa-bars"></i>
@@ -175,7 +158,7 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>Категории</span>
                         </div>
                         <ul>
                            
@@ -200,11 +183,11 @@
                         <div class="hero__search__form">
                             <form action="#">
                                 <div class="hero__search__categories">
-                                    All Categories
+                                    Все Категории
                                     <span class="arrow_carrot-down"></span>
                                 </div>
                                 <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                                <button type="submit" class="site-btn">Искать</button>
                             </form>
                         </div>
                         <div class="hero__search__phone">
@@ -496,12 +479,12 @@
                     <div class="row" id="holder">
                         
                     </div>
-                    <div class="product__pagination">
+                    <!-- <div class="product__pagination">
                         <a href="#">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
                         <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -591,7 +574,7 @@
 <script>
 var holder = document.querySelector('#holder');
 
-displayProductGrid(productsObj[2].products, holder, '../')
+// displayProductGrid(productsObj[2].products, holder, '../')
 
 displayAllProducts(productsObj, holder, '../');
 

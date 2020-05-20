@@ -508,10 +508,11 @@ var holder = document.querySelector('#holder');
 
 const currentCategoryObj = productsObj[0].products;
 
-displayProductGrid(currentCategoryObj, holder)
-// displayAllProducts(productsObj, holder);
+// displayProductGrid(currentCategoryObj, holder)
+displayAllProducts(productsObj, holder);
 
-document.querySelector('#num-products-found').innerHTML = getNumProducts(currentCategoryObj);
+document.querySelector('#num-products-found').innerHTML = getTotalNumProducts(productsObj);
+
 
 console.log(currentCategoryObj)
 
