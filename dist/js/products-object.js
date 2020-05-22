@@ -184,6 +184,11 @@ productsObj = [
             imgURL: 'img/product/1.jpg',
             price: 10,
             currency: '$',
+            productDetails:
+            {
+                width: '18.00',
+                height: '222.35',
+            }
         },
         {
             productId: 1,
@@ -319,6 +324,12 @@ productsObj = [
             imgURL: 'img/product/1.jpg',
             price: 10,
             currency: '$',
+            productDetails:
+            {
+                'Год':[' 2008', ' 2014', ' 2017', ' 2019'],
+                'Обьём Ковша': '1,0 м<sup>3</sup>',
+                'Количество': 12,
+            }
         },
         {
             productId: 1,

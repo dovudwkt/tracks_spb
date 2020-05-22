@@ -2753,6 +2753,9 @@ ol {
 	float: left;
 	line-height: 25px;
 }
+.footer__copyright__text p { 
+	font-size:10px !important;
+}
 
 .footer__copyright__payment {
 	float: right;
@@ -3216,6 +3219,9 @@ ol {
 	.footer__copyright__text {
 		float: none;
 		margin-bottom: 25px;
+	}
+	.footer__copyright__text p { 
+		font-size:10px !important;
 	}
 	.footer__copyright__payment {
 		float: none;
