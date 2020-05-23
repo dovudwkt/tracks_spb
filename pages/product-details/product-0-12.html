@@ -54,7 +54,7 @@ tr:nth-child(even) {
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li><a href="../../index.html">ГЛАВНАЯ</a></li>
-                <li class="active"><a href="./shop-grid.html">КАТАЛОГ</a></li>
+                <li class="active"><a href="../../shop-grid.html">АРЕНДА СПЕЦТЕХНИКИ</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
                         <li><a href="../../shop-details.html">Shop Details</a></li>
@@ -130,7 +130,7 @@ tr:nth-child(even) {
                     <nav class="header__menu">
                         <ul>
                             <li><a href="../../index.html">ГЛАВНАЯ</a></li>
-                            <li class="active"><a href="./shop-grid.html">КАТАЛОГ</a></li>
+                            <li class="active"><a href="../../shop-grid.html">АРЕНДА СПЕЦТЕХНИКИ</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="../../shop-details.html">Shop Details</a></li>
@@ -506,20 +506,20 @@ tr:nth-child(even) {
 
 <script>
 // Get objects
-const currentProductObj = productsObj[0].products[0];
+const currentProductObj = productsObj[12].products[0];
 const productDetailsObj = currentProductObj.productDetails;
 
 // Get elements (nodes)
-const productNameObj = document.querySelector('[data-fullName]');
-const priceObj = document.querySelector('[data-price]');
+const productNameEl = document.querySelector('[data-fullName]');
+const priceEl = document.querySelector('[data-price]');
 
 const detailsHolder = document.querySelector('#product-details-holder');
 
-productNameObj.textContent = `${currentProductObj.fullName}`;
-priceObj.textContent = `${currentProductObj.price}${currentProductObj.currency}`;
+productNameEl.textContent = `${currentProductObj.fullName}`;
+priceEl.textContent = `${currentProductObj.price}${currentProductObj.currency}`;
 
 displayDetails(productDetailsObj, detailsHolder);
-console.log(currentProductObj.fullName);
+// console.log(currentProductObj.fullName);
     
     
     
