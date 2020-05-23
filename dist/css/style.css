@@ -3176,6 +3176,9 @@ ol {
 	.over_hid {
 		overflow: hidden;
 	}
+	.product-categories-menu{
+		display:none;
+	}
 }
 
 /* Wide Mobile = 480px */
@@ -3437,6 +3440,9 @@ ol {
 	.over_hid {
 		overflow: hidden;
 	}
+	.product-categories-menu{
+		display:none;
+	}
 }
 
 /* Small Device = 320px */
@@ -3485,5 +3491,8 @@ ol {
 	}
 	.blog__details__hero__text h2 {
 		font-size: 24px;
+	}
+	.product-categories-menu{
+		display:none;
 	}
 }
