@@ -23,7 +23,7 @@ function displayProductGrid(data, appendTo, relPath=''){
             appendTo.innerHTML += element;
             // Add shadow
             document.querySelectorAll('[data-type="productItem"]')[i].style = 'box-shadow: 0px 12px 45px -40px #b98612;';
-        }   
+        }
         // Add pagination buttons
         // appendTo.innerHTML += 
         //                 `<div class="product__pagination">
