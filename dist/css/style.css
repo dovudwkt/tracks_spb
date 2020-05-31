@@ -2753,6 +2753,9 @@ ol {
 	float: left;
 	line-height: 25px;
 }
+.footer__copyright__text p { 
+	font-size:10px !important;
+}
 
 .footer__copyright__payment {
 	float: right;
@@ -3173,6 +3176,9 @@ ol {
 	.over_hid {
 		overflow: hidden;
 	}
+	.product-categories-menu{
+		display:none;
+	}
 }
 
 /* Wide Mobile = 480px */
@@ -3216,6 +3222,9 @@ ol {
 	.footer__copyright__text {
 		float: none;
 		margin-bottom: 25px;
+	}
+	.footer__copyright__text p { 
+		font-size:10px !important;
 	}
 	.footer__copyright__payment {
 		float: none;
@@ -3431,6 +3440,9 @@ ol {
 	.over_hid {
 		overflow: hidden;
 	}
+	.product-categories-menu{
+		display:none;
+	}
 }
 
 /* Small Device = 320px */
@@ -3479,5 +3491,8 @@ ol {
 	}
 	.blog__details__hero__text h2 {
 		font-size: 24px;
+	}
+	.product-categories-menu{
+		display:none;
 	}
 }
