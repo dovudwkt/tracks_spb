@@ -3496,3 +3496,24 @@ ol {
 		display:none;
 	}
 }
+/* Sulaimon */
+.flag img{
+	width: 18px;
+	height: 18px;
+}
+
+#lang{
+	width: 25px;
+	height: 15px;
+}
+
+.flag button{
+	border:0px solid;
+	width: 100%;
+	height: 100%;
+	background-color: #222222;
+	color: white;
+}
+.flag button:hover{
+	color: #249BC8;
+}

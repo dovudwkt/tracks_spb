@@ -41,7 +41,7 @@
                 <div>English</div>
                 <span class="arrow_carrot-down"></span>
                 <ul>
-                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">Русский</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
             </div>
@@ -103,12 +103,12 @@
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__language">
-                                <img src="img/language.png" alt="">
-                                <div>English</div>
+                                <img src="img/language_eng.png" alt="" id="lang">
+                                <div id="language">English</div>
                                 <span class="arrow_carrot-down"></span>
-                                <ul>
-                                    <li><a href="#">Spanis</a></li>
-                                    <li><a href="#">English</a></li>
+                                <ul class="flag">
+                                    <li><button onclick="switchLang()" id="russ"> <img id="rusFlag" src="img/russia.png" alt="" >Русский</button></li>
+                                    <li><button onclick="switchLang1()" id="eng"> <img id="engFlag" src="img/uk-flag-icon-png-6.png" alt="" >English</button></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
@@ -424,6 +424,18 @@ function searchProduct(event){
          }
     }
 
+}
+
+function switchLang(){
+    var langName = 'Русский'
+    document.getElementById('lang').src = "img/language_russ.png";
+    document.getElementById('language').innerHTML = langName;
+}
+
+function switchLang1(){
+    var langName = 'English'
+    document.getElementById('lang').src = "img/language_eng.png";
+    document.getElementById('language').innerHTML = langName;
 }
 
 
