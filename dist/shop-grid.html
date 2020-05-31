@@ -37,12 +37,12 @@
        
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
-                <img src="img/language.png" alt="">
-                <div>English</div>
+                <img src="img/rus.png" alt="" class="flag_img">
+                <div class="language">English</div>
                 <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li><a href="#">Русский</a></li>
-                    <li><a href="#">English</a></li>
+                <ul class="flag">
+                    <li><button onclick="switchLang('rus')" id="russ"> <img id="rusFlag" src="img/rus.png" alt="" >Русский</button></li>
+                    <li><button onclick="switchLang('eng')" id="eng"> <img id="engFlag" src="img/eng.png" alt="" >English</button></li>
                 </ul>
             </div>
             <div class="header__top__right__auth">
@@ -103,12 +103,12 @@
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__language">
-                                <img src="img/language_eng.png" alt="" id="lang">
-                                <div id="language">English</div>
+                                <img src="img/rus.png" alt="" class="flag_img">
+                                <div class="language">English</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul class="flag">
-                                    <li><button onclick="switchLang()" id="russ"> <img id="rusFlag" src="img/russia.png" alt="" >Русский</button></li>
-                                    <li><button onclick="switchLang1()" id="eng"> <img id="engFlag" src="img/uk-flag-icon-png-6.png" alt="" >English</button></li>
+                                    <li><button onclick="switchLang('rus')" id="russ"> <img id="rusFlag" src="img/rus.png" alt="" >Русский</button></li>
+                                    <li><button onclick="switchLang('eng')" id="eng"> <img id="engFlag" src="img/eng.png" alt="" >English</button></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
@@ -426,17 +426,39 @@ function searchProduct(event){
 
 }
 
-function switchLang(){
-    var langName = 'Русский'
-    document.getElementById('lang').src = "img/language_russ.png";
-    document.getElementById('language').innerHTML = langName;
+function switchLang(lang){
+
+    document.getElementsByClassName('flag_img')[0].src = "img/"+lang+".png"; // for mobile screens
+    document.getElementsByClassName('flag_img')[1].src = "img/"+lang+".png"; // for larger screens
+
+    document.getElementsByClassName('language')[0].innerHTML = lang; // for mobile screens
+    document.getElementsByClassName('language')[1].innerHTML = lang; // for larger screens
 }
 
-function switchLang1(){
-    var langName = 'English'
-    document.getElementById('lang').src = "img/language_eng.png";
-    document.getElementById('language').innerHTML = langName;
-}
+// I used same icons instead of rounded and squered ones
+// I called flag icons 'rus' and 'eng'
+// When switchLang() function is called, we pass the languse as a parameter: switchLang('rus'). Argument must be a string*
+// The image name and parameter passed to function should match* 
+
+
+    // IT IS A BAD PRACTICE TO GIVE IDs WITH SIMILAR NAMES: lang and language in your case
+    // Give meaningful names 
+
+
+
+
+// function switchLang(){
+//     var langName = 'Русский'
+//     document.getElementById('lang').src = "img/language_russ.png";
+//     document.getElementById('language').innerHTML = langName;
+// }
+
+// function switchLang1(){
+//     var langName = 'English'
+//     document.getElementById('lang').src = "img/language_eng.png";
+//     document.getElementById('language').innerHTML = langName;
+// }
+
 
 
 </script>

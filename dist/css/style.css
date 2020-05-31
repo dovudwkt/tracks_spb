@@ -3497,15 +3497,15 @@ ol {
 	}
 }
 /* Sulaimon */
-.flag img{
+.flag img, .flag_img{
 	width: 18px;
 	height: 18px;
 }
 
-#lang{
-	width: 25px;
-	height: 15px;
-}
+/* #lang{
+	width: 20px;
+	height: 20px;
+} */
 
 .flag button{
 	border:0px solid;
