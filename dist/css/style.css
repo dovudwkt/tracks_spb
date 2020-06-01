@@ -186,6 +186,13 @@ ol {
 	padding: 13px 30px 12px;
 	background: #b98612;
 	border: none;
+	opacity: .9;
+}
+.site-btn:hover{
+	opacity: 1;
+}
+#search{
+	caret-color: #b98612;
 }
 
 /* Preloder */
@@ -2679,6 +2686,10 @@ ol {
 	line-height: 32px;
 }
 
+.footer__widget ul li a:hover{
+	color: #b98612;
+}
+
 .footer__widget p {
 	font-size: 14px;
 	color: #1c1c1c;
@@ -2697,6 +2708,7 @@ ol {
 	color: #1c1c1c;
 	height: 46px;
 	border: 1px solid #ededed;
+	caret-color: #b98612 ;
 }
 
 .footer__widget form input::placeholder {
