@@ -38,11 +38,11 @@
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="img/rus.png" alt="" class="flag_img">
-                <div class="language">English</div>
+                <div class="language">rus</div>
                 <span class="arrow_carrot-down"></span>
                 <ul class="flag">
-                    <li><button onclick="switchLang('rus')" id="russ"> <img id="rusFlag" src="img/rus.png" alt="" >Русский</button></li>
-                    <li><button onclick="switchLang('eng')" id="eng"> <img id="engFlag" src="img/eng.png" alt="" >English</button></li>
+                    <li><button onclick="switchLang('rus')" > <img id="rusFlag" src="img/rus.png" alt="" >rus</button></li>
+                    <li><button onclick="switchLang('eng')" > <img id="engFlag" src="img/eng.png" alt="" >eng</button></li>
                 </ul>
             </div>
             <div class="header__top__right__auth">
@@ -104,11 +104,11 @@
                             </div>
                             <div class="header__top__right__language">
                                 <img src="img/rus.png" alt="" class="flag_img">
-                                <div class="language">English</div>
+                                <div class="language">rus</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul class="flag">
-                                    <li><button onclick="switchLang('rus')" id="russ"> <img id="rusFlag" src="img/rus.png" alt="" >Русский</button></li>
-                                    <li><button onclick="switchLang('eng')" id="eng"> <img id="engFlag" src="img/eng.png" alt="" >English</button></li>
+                                    <li><button onclick="switchLang('rus')" > <img id="rusFlag" src="img/rus.png" alt="" >rus</button></li>
+                                    <li><button onclick="switchLang('eng')" > <img id="engFlag" src="img/eng.png" alt="" >eng</button></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
@@ -393,11 +393,7 @@ displayAllProducts(productsObj, holder);
 
 document.querySelector('#num-products-found').innerHTML = getTotalNumProducts(productsObj);
 
-
 console.log(currentCategoryObj)
-
-
-
 
 
 // Search functionality
@@ -441,9 +437,10 @@ function switchLang(lang){
 // The image name and parameter passed to function should match* 
 
 
-    // IT IS A BAD PRACTICE TO GIVE IDs WITH SIMILAR NAMES: lang and language in your case
-    // Give meaningful names 
+//-------Advice for Sulaimon----
 
+// IT IS A BAD PRACTICE TO GIVE IDs WITH SIMILAR NAMES: lang and language in your case
+// Give meaningful names 
 
 
 
