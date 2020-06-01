@@ -190,7 +190,7 @@
                                        Все Категории
                                     <span class="arrow_carrot-down"></span>
                                 </div>
-                                <input type="text" placeholder="What do yo u need?" id="search">
+                                <input type="text" placeholder="What do you need?" id="search">
                                 <button type="submit" class="site-btn">Искать</button>
                             </form>
                         </div>
@@ -405,63 +405,35 @@ searchInput.addEventListener('change', function() {
     searchProduct(event)
 });
 
+
+var itemObj = document.querySelectorAll('[data-productName]')[0];
+
 function searchProduct(event){
     searchTxt = event.target.value;
     console.log(searchTxt);
     // let foundItems = document.querySelectorAll('[data-productName="'+ searchTxt +'"]');
     let items = document.querySelectorAll('[data-productName]');
     let itemNames = new Array();
-    
+
     for(let i=0; i<items.length; i++){
          itemNames.push(items[i].dataset.productname); 
-         
+  
          if(itemNames[i].indexOf(searchTxt) > -1 ){
             console.log(items[i]);
          }
     }
-
 }
 
 function switchLang(lang){
-
     document.getElementsByClassName('flag_img')[0].src = "img/"+lang+".png"; // for mobile screens
     document.getElementsByClassName('flag_img')[1].src = "img/"+lang+".png"; // for larger screens
-
     document.getElementsByClassName('language')[0].innerHTML = lang; // for mobile screens
     document.getElementsByClassName('language')[1].innerHTML = lang; // for larger screens
 }
 
-// I used same icons instead of rounded and squered ones
-// I called flag icons 'rus' and 'eng'
-// When switchLang() function is called, we pass the languse as a parameter: switchLang('rus'). Argument must be a string*
-// The image name and parameter passed to function should match* 
-
-
-//-------Advice for Sulaimon----
-
-// IT IS A BAD PRACTICE TO GIVE IDs WITH SIMILAR NAMES: lang and language in your case
-// Give meaningful names 
-
-
-
-// function switchLang(){
-//     var langName = 'Русский'
-//     document.getElementById('lang').src = "img/language_russ.png";
-//     document.getElementById('language').innerHTML = langName;
-// }
-
-// function switchLang1(){
-//     var langName = 'English'
-//     document.getElementById('lang').src = "img/language_eng.png";
-//     document.getElementById('language').innerHTML = langName;
-// }
 
 
 
 </script>
-
-
-
 </body>
-
 </html>
