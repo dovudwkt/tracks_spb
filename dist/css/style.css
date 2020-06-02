@@ -2353,6 +2353,10 @@ ol {
 	padding: 14px 20px 12px;
 	border-radius: 25px;
 }
+.blog__btn:hover{
+	box-shadow: #b2b2b2  0  0 12px 0 ;
+	transition: 0.3s;
+}
 
 .blog__item__text .blog__btn span {
 	position: relative;
@@ -3515,7 +3519,7 @@ ol {
 	}
 }
 /* Sulaimon */
-.flag img, .flag_img{
+.hover_lang img, .flag_img{
 	width: 18px;
 	height: 18px;
 }
@@ -3525,13 +3529,13 @@ ol {
 	height: 20px;
 } */
 
-.flag button{
+.hover_lang button{
 	border:0px solid;
 	width: 100%;
 	height: 100%;
 	background-color: #222222;
 	color: white;
 }
-.flag button:hover{
+.hover_lang button:hover{
 	color: #249BC8;
 }
