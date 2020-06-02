@@ -645,7 +645,9 @@ ol {
 	line-height: 39px;
 	display: block;
 }
-
+.hero__categories ul li a:hover{
+	color: #b98612;
+}
 .hero__search {
 	overflow: hidden;
 	margin-bottom: 30px;
@@ -1116,6 +1118,10 @@ ol {
 	color: #1c1c1c;
 	line-height: 39px;
 	display: block;
+}
+
+.sidebar__item ul li a:hover{
+	color: #b98612;
 }
 
 .sidebar__item .latest-product__text {
