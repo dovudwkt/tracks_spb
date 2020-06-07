@@ -268,67 +268,8 @@
                     </div>
 
                     <!-- Facilities section -->
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="blog__item__text">
-                                    <ul>
-                                        <li><i class="fa fa-calendar-o"></i>  22 апреля 2015 г. - 05 октября 2015 г. </li>
-                                    </ul>
-                                    <h5><a href="#">Администрация МО Сосновоборский городской округ Ленинградской области  </a></h5>
-                                    <p>Строительство  кладбища «Воронка 2»  Площадь застройки 10300 м2
-                                        Адрес объекта: Ленинградская область, г.Сосновый Бор.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="blog__item__text">
-                                    <ul>
-                                        <li><i class="fa fa-calendar-o"></i> 1 сентября 2015 г. - 18 декабря 2015 г. </li>
-                                    </ul>
-                                    <h5><a href="#">Санкт-Петербургское ГКУ «Организатор перевозок» </a></h5>
-                                    <p>Выполнение работ по подключению к наружным сетям канализации и системе коммунального водоснабжения (реконструкция) автобусной станции.
-                                        Адрес объекта:  .г.Ломоносов, Привокзальная улица дом 1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="blog__item__text">
-                                    <ul>
-                                        <li><i class="fa fa-calendar-o"></i>  22 апреля 2015 г. - 05 октября 2015 г. </li>
-                                    </ul>
-                                    <h5><a href="#">Администрация МО Сосновоборский городской округ Ленинградской области  </a></h5>
-                                    <p>Строительство  кладбища «Воронка 2»  Площадь застройки 10300 м2
-                                        Адрес объекта: Ленинградская область, г.Сосновый Бор.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="blog__item">
-                                <div class="blog__item__pic">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="blog__item__text">
-                                    <ul>
-                                        <li><i class="fa fa-calendar-o"></i>  22 апреля 2015 г. - 05 октября 2015 г. </li>
-                                    </ul>
-                                    <h5><a href="#">Администрация МО Сосновоборский городской округ Ленинградской области  </a></h5>
-                                    <p>Строительство  кладбища «Воронка 2»  Площадь застройки 10300 м2
-                                        Адрес объекта: Ленинградская область, г.Сосновый Бор.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row" id="facilities-holder">
+                        
                     </div>
                     <!-- End of Facilities section -->
                 </div>
@@ -418,19 +359,18 @@
 
     <script src="js/products-object.js"></script>
     <script src="js/display-products-grid.js"></script>
+    <script src="js/facilities-obj.js"></script>
 
 <script>
-var holder = document.querySelector('#holder');
+var holder = document.querySelector('#facilities-holder');
 
 const currentCategoryObj = productsObj[0].products;
 
-// displayProductGrid(currentCategoryObj, holder)
-displayAllProducts(productsObj, holder);
-
-document.querySelector('#num-products-found').innerHTML = getTotalNumProducts(productsObj);
+displayFacilities(holder);
 
 
-console.log(currentCategoryObj)
+
+// console.log(facilitiesObj[0].name);
 
 
 
