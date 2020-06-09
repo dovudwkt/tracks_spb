@@ -2940,12 +2940,48 @@ ol {
 	letter-spacing: 2px;
 }
 
+
+/* ------
+  Gallery
+--------*/
+
+/* -------------------------- */
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1;
+	width: 100%;
+	transition: .5s ease;
+	/* opacity:1; */
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.imgContainer:hover .overlay{
+	opacity:1;
+}
+
+.overlay h6 a {
+	color:white;
+}
+.overlay h6 a:hover {
+	color:rgb(226, 220, 220);
+}
+
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
 	}
+	.overlay{
+		opacity:0;
+	}
+	
 }
 
 /* Medium Device = 1200px */
@@ -2974,6 +3010,9 @@ ol {
 	}
 	.shoping__discount form input {
 		width: 240px;
+	}
+	.overlay{
+		opacity:0;
 	}
 }
 
@@ -3465,6 +3504,10 @@ ol {
 	.product-categories-menu{
 		display:none;
 	}
+	.overlay{
+		opacity:1;
+	}
+
 }
 
 /* Small Device = 320px */
@@ -3517,18 +3560,16 @@ ol {
 	.product-categories-menu{
 		display:none;
 	}
+	.overlay{
+		opacity:1;
+	}
 }
+
 /* Sulaimon */
 .hover_lang img, .flag_img{
 	width: 18px;
 	height: 18px;
 }
-
-/* #lang{
-	width: 20px;
-	height: 20px;
-} */
-
 .hover_lang button{
 	border:0px solid;
 	width: 100%;
@@ -3539,3 +3580,4 @@ ol {
 .hover_lang button:hover{
 	color: #249BC8;
 }
+
