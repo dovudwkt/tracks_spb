@@ -220,10 +220,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Колесные экскаваторы</h2>
+                        <h2>АРЕНДА СПЕЦТЕХНИКИ</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <span>Shop</span>
+                            <!-- <a href="./index.html">Home</a>
+                            <span>Shop</span> -->
                         </div>
                     </div>
                 </div>
@@ -236,55 +236,7 @@
     <section class="product spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-5">
-                    <div class="sidebar">
-                        <div class="sidebar__item d-none d-md-block">
-                            <h4>АРЕНДА СПЕЦТЕХНИКИ</h4>
-                            <ul>
-                                <li><a href="pages/avtogreydi-grid.html">Автогрейдеры</a></li>
-                                <li><a href="pages/avtovishki-grid.html">Автовышки</a></li>
-                                <li><a href="pages/avtokrani-grid.html">Автокраны</a></li>
-                                <li><a href="pages/asfalto-ukladchiki-grid.html">Асфальто-уклaдчики</a></li>
-                                <li><a href="pages/buldozeri-grid.html">Бульдозеры</a></li>
-                                <li><a href="pages/dorojnaya-freza-grid.html">Дорожная фреза</a></li>
-                                <li><a href="pages/katki-grid.html">Катки</a></li>
-                                <li><a href="pages/manipulyatori-grid.html">Манипуляторы</a></li>
-                                <li><a href="pages/pogruzchiki-grid.html">Погрузчики</a></li>
-                                <li><a href="pages/samosvali-grid.html">Самосвалы</a></li>
-                                <li><a href="pages/trali-grid.html">Тралы</a></li>
-                                <li><a href="pages/shalandi-grid.html">Шаланды</a></li>
-                                <li><a href="pages/ekskavatori-grid.html">Экскаваторы</a></li>
-                            </ul>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-7">
-                    <div class="filter__item">
-                        <div class="row" >
-                            <!-- <div class="col-lg-4 col-md-5">
-                                <div class="filter__sort">
-                                    <span>Sort By</span>
-                                    <select>
-                                        <option value="0">Default</option>
-                                        <option value="0">Default</option>
-                                    </select>
-                                </div>
-                            </div> -->
-                            <div class="col-lg-4 col-md-4">
-                                <div class="filter__found">
-                                    <h6><span id="num-products-found">16</span> Products found</h6>
-                                </div>
-                            </div>
-                            <!-- <div class="col-lg-4 col-md-3">
-                                <div class="filter__option">
-                                    <span class="icon_grid-2x2"></span>
-                                    <span class="icon_ul"></span>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    
+                <div class="col-lg-12 col-md-9">
                     <div class="row" id="holder">
                         
                         <!-- All product grids go here -->
@@ -379,29 +331,19 @@
     <script src="js/display-products-grid.js"></script>
 
 <script>
-var holder = document.querySelector('#holder');
-
+const holder = document.querySelector('#holder');
 const currentCategoryObj = productsObj[0].products;
+var itemObj = document.querySelectorAll('[data-productName]')[0];
 
-// displayProductGrid(currentCategoryObj, holder)
-displayAllProducts(productsObj, holder);
-
-document.querySelector('#num-products-found').innerHTML = getTotalNumProducts(productsObj);
-
-console.log(currentCategoryObj)
-
+displayCategoriesGrid(productsObj, holder)
 
 // Search functionality
 // Almost working
-
 var searchInput = document.getElementById('search');
 
 searchInput.addEventListener('change', function() {
     searchProduct(event)
 });
-
-
-var itemObj = document.querySelectorAll('[data-productName]')[0];
 
 function searchProduct(event){
     searchTxt = event.target.value;

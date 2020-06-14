@@ -99,8 +99,12 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
+}
+a:hover:not(.default-link-hover),
+a:focus {
 	color: #ffffff;
 }
+
 
 ul,
 ol {
@@ -775,6 +779,7 @@ ol {
 .categories__item {
 	height: 270px;
 	position: relative;
+	box-shadow: 0px 0px 20px -15px #181818;
 }
 
 .categories__item h5 {
@@ -1059,12 +1064,21 @@ ol {
 	padding: 45px 0 40px;
 }
 
+.breadcrumb__text{
+	background-color:#2e2e2e82;
+}
+
 .breadcrumb__text h2 {
 	font-size: 46px;
-	color: #000;
+	color: rgb(255, 255, 255);
 	font-weight: 700;
-	background-color:#f4e5bf82;
 }
+
+.breadcrumb__text h5{
+	color:rgb(236, 235, 235);
+}
+
+
 
 .breadcrumb__option a {
 	display: inline-block;

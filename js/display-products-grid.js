@@ -74,8 +74,6 @@ function openURL(url, target="_blank"){
 }
 
 
-
-
 function displayGallery(data, appendTo, relPath=''){
     for(let z=0;z<data.length;z++){
         var element;
@@ -85,27 +83,61 @@ function displayGallery(data, appendTo, relPath=''){
                                 data-productName="${data[z].products[i].model}" 
                                 class="col-lg-4 col-md-4 col-sm-6 mb-3 imgContainer btn">
     
-                                <div onclick="openURL('./${data[z].products[i].imgURL} ')" >
-                                    <div class="product__item__pic set-bg" 
-                                         style='background:url("${relPath}${data[z].products[i].imgURL}")'
-                                         title="open an image" >
+                                <div class="product__item__pic set-bg" 
+                                    style='background:url("${relPath}${data[z].products[i].imgURL}")'
+                                    title="open an image" >
                                     
-                                         <div class="product__item__text overlay">
-                                            <h6><a title="View the item" href="pages/product-details/${data[z].products[i].productURL}"  >${data[z].products[i].fullName}</a></h6>
-                                        </div>
+                                    <div onclick="openURL('./${data[z].products[i].imgURL} ')" 
+                                         class="w-100 h-100">      
                                     </div>
-                                         
-                                    
+                                    <div class="product__item__text overlay">
+                                       <h6><a title="View the item" href="pages/product-details/${data[z].products[i].productURL}"  >${data[z].products[i].fullName}</a></h6>
+                                   </div>
                                     
                                 </div>
                             </div>` ;
                 appendTo.innerHTML += element;
-                // Add shadow
-                document.querySelectorAll('[data-type="productItem"]')[i].style = 'box-shadow: 0px 12px 45px -40px #b98612;';
             } 
         }
     }
    
-     
+    
+};
+
+
+
+function displayCategoriesGrid(data, appendTo, relPath=''){
+    for(let z=0;z<data.length;z++){
+        var element;
+        
+        // element = ` <div data-id="${z}" data-type="productItem" 
+        //                 data-productName="${data[z].category}" 
+        //                 class="col-lg-2 col-md-3 col-sm-3 mb-3 imgContainer btn categories__item">
+
+        //                 <div class="product__item__pic set-bg" 
+        //                     style='background:url("${relPath}${data[z].categoryImgURL}")'>
+                            
+        //                     <div onclick="openURL('./pages/${data[z].categoryURL} ')" 
+        //                             class="w-100 h-100">      
+        //                     </div>
+        //                     <div class="product__item__text overlay">
+        //                         <h6><a title="" href="pages/${data[z].categoryURL}" >${data[z].category}</a></h6>
+        //                     </div>
+                            
+        //                 </div>
+        //             </div>` ;
+
+        element = `<div class="col-lg-3 col-md-4 col-sm-6 mb-2">
+                        <a href="${relPath}pages/${data[z].categoryURL}" class="default-link-hover">
+                            <div class="categories__item" >
+                                <div class="categories__item set-bg" style='background:url("${relPath}${data[z].categoryImgURL}")'> </div>
+                                <h5> ${data[z].category} </h5>
+                            </div>
+                        </a>
+                    </div>`;
+
+        appendTo.innerHTML += element;
+            
+        }
     
 };
