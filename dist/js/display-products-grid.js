@@ -103,3 +103,41 @@ function displayGallery(data, appendTo, relPath=''){
    
     
 };
+
+
+
+function displayCategoriesGrid(data, appendTo, relPath=''){
+    for(let z=0;z<data.length;z++){
+        var element;
+        
+        // element = ` <div data-id="${z}" data-type="productItem" 
+        //                 data-productName="${data[z].category}" 
+        //                 class="col-lg-2 col-md-3 col-sm-3 mb-3 imgContainer btn categories__item">
+
+        //                 <div class="product__item__pic set-bg" 
+        //                     style='background:url("${relPath}${data[z].categoryImgURL}")'>
+                            
+        //                     <div onclick="openURL('./pages/${data[z].categoryURL} ')" 
+        //                             class="w-100 h-100">      
+        //                     </div>
+        //                     <div class="product__item__text overlay">
+        //                         <h6><a title="" href="pages/${data[z].categoryURL}" >${data[z].category}</a></h6>
+        //                     </div>
+                            
+        //                 </div>
+        //             </div>` ;
+
+        element = `<div class="col-lg-3 col-md-4 col-sm-6 mb-2">
+                        <a href="${relPath}pages/${data[z].categoryURL}" class="default-link-hover">
+                            <div class="categories__item" >
+                                <div class="categories__item set-bg" style='background:url("${relPath}${data[z].categoryImgURL}")'> </div>
+                                <h5> ${data[z].category} </h5>
+                            </div>
+                        </a>
+                    </div>`;
+
+        appendTo.innerHTML += element;
+            
+        }
+    
+};

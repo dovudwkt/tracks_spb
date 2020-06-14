@@ -14,12 +14,16 @@ productsObj = [
 {
     categoryId: 0,    
     category: 'Автогрейдеры',
+    categoryURL: 'category-0.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     products:[]
 },
 
 {
     categoryId: 1,   
     category: 'Автовышки',
+    categoryURL: 'category-1.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products:[]
 },
@@ -27,6 +31,8 @@ productsObj = [
 {    
     categoryId: 2,
     category: 'Автокраны',
+    categoryURL: 'category-2.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: []
     
@@ -34,6 +40,8 @@ productsObj = [
 {    
     categoryId: 3,
     category: 'Асфальто-уклaдчики',
+    categoryURL: 'category-3.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -61,6 +69,8 @@ productsObj = [
 {    
     categoryId: 4,
     category: 'Бульдозеры',
+    categoryURL: 'category-4.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -89,6 +99,8 @@ productsObj = [
 {    
     categoryId: 5,
     category: 'Дорожная фреза',
+    categoryURL: 'category-5.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -107,6 +119,8 @@ productsObj = [
 {
     categoryId: 6,
     category: 'Катки',
+    categoryURL: 'category-6.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -166,6 +180,8 @@ productsObj = [
 {    
     categoryId: 7,
     category: 'Манипуляторы',
+    categoryURL: 'category-7.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: []
     
@@ -173,6 +189,8 @@ productsObj = [
 {    
     categoryId: 8,
     category: 'Погрузчики',
+    categoryURL: 'category-8.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -257,6 +275,8 @@ productsObj = [
 {    
     categoryId: 9,
     category: 'Самосвалы',
+    categoryURL: 'category-9.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -276,6 +296,8 @@ productsObj = [
 {    
     categoryId: 10,
     category: 'Тралы',
+    categoryURL: 'category-10.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -295,6 +317,8 @@ productsObj = [
 {    
     categoryId: 11,
     category: 'Шаланды',
+    categoryURL: 'category-11.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         // {
@@ -313,6 +337,8 @@ productsObj = [
 {    
     categoryId: 12,
     category: 'Экскаваторы',
+    categoryURL: 'category-12.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
