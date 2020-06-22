@@ -1091,11 +1091,11 @@ ol {
 
 .breadcrumb__option a:after {
 	position: absolute;
-	right: -12px;
+	right: -16px;
 	top: 13px;
 	height: 1px;
 	width: 10px;
-	background: #000;
+	background: #fff;
 	content: "";
 }
 
