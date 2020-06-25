@@ -9,13 +9,13 @@ function displayProductGrid(data, appendTo, relPath=''){
             element = ` <div data-id="${i}" data-type="productItem" data-productName="${data[i].model}" class="col-lg-4 col-md-6 col-sm-6 mb-4">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" style='background:url("${relPath}${data[i].imgURL}")'>
-                                    <div class="product__item__pic__hover" onclick="redirectTo('pages/product-details/${data[i].productURL}')">
+                                    <div class="product__item__pic__hover" onclick="redirectTo('./product-details/${data[i].productURL}')">
                                     <span>More</span>
                                     
                                     </div>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="pages/product-details/${data[i].productURL}"  >${data[i].fullName}</a></h6>
+                                    <h6><a href="./product-details/${data[i].productURL}"  >${data[i].fullName}</a></h6>
                                     <h5><span style="float:left;">${data[i].currency}${data[i].price}</span><span style="float:right;">смена 8(м/ч)</span></h5>
                                 </div>
                             </div>
@@ -53,14 +53,24 @@ function displayAllProducts(data, appendTo, relPath=''){
 //      const productDetailsObj = currentProductObj.productDetails;
 // displayDetails(productDetailsObj, detailsHolder);
 function displayDetails(product, appendTo){
+    let productDetails = product.productDetails;
+    
     let table = `<table class="table">`;
-    for(property in product){
-        table += `<tr class=""><td><strong> ${property}</strong></td><td>${product[property]}</td> </tr>`
+    for(property in productDetails){
+        table += `<tr class=""><td><strong> ${property}</strong></td><td>${productDetails[property]}</td> </tr>`
     }
     table += `</table>`;
-
     appendTo.innerHTML = table;
-} 
+
+    var imgURL = `../../${product.imgURL}`;
+    displayDetailsPicture(imgURL);
+}
+// Display the image of the product in details section | the page should have an <img id="details-image-holder">
+function displayDetailsPicture(imgURL){
+    let productPicture = document.querySelector('#details-image-holder');
+    productPicture.src = `${imgURL}`;
+}
+
 
    // Redirect
 function redirectTo(url){
