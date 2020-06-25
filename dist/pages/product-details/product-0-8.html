@@ -225,8 +225,8 @@ tr:nth-child(even) {
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
-                            <img class="product__details__pic__item--large"
-                                src="../../img/product/1.jpg" alt="">
+                            <img class="product__details__pic__item--large" id="details-image-holder"
+                                src="../../img/product/3.jpg" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
                             <img data-imgbigurl="../../img/product/1.jpg"
@@ -510,7 +510,8 @@ const detailsHolder = document.querySelector('#product-details-holder');
 productNameEl.textContent = `${currentProductObj.fullName}`;
 priceEl.textContent = `${currentProductObj.price}${currentProductObj.currency}`;
 
-displayDetails(productDetailsObj, detailsHolder);
+displayDetails(currentProductObj, detailsHolder);
+
 // console.log(currentProductObj.fullName);
     
     

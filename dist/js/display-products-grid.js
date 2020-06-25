@@ -53,14 +53,25 @@ function displayAllProducts(data, appendTo, relPath=''){
 //      const productDetailsObj = currentProductObj.productDetails;
 // displayDetails(productDetailsObj, detailsHolder);
 function displayDetails(product, appendTo){
+    let productDetails = product.productDetails;
+    
     let table = `<table class="table">`;
-    for(property in product){
-        table += `<tr class=""><td><strong> ${property}</strong></td><td>${product[property]}</td> </tr>`
+    for(property in productDetails){
+        table += `<tr class=""><td><strong> ${property}</strong></td><td>${productDetails[property]}</td> </tr>`
     }
     table += `</table>`;
-
     appendTo.innerHTML = table;
-} 
+
+    var imgURL = `../../${product.imgURL}`;
+    displayDetailsPicture(imgURL);
+}
+
+function displayDetailsPicture(imgURL){
+    let productPicture = document.querySelector('#details-image-holder');
+    productPicture.src = `${imgURL}`;
+}
+
+
 
    // Redirect
 function redirectTo(url){
