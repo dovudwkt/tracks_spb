@@ -65,12 +65,11 @@ function displayDetails(product, appendTo){
     var imgURL = `../../${product.imgURL}`;
     displayDetailsPicture(imgURL);
 }
-
+// Display the image of the product in details section | the page should have an <img id="details-image-holder">
 function displayDetailsPicture(imgURL){
     let productPicture = document.querySelector('#details-image-holder');
     productPicture.src = `${imgURL}`;
 }
-
 
 
    // Redirect
