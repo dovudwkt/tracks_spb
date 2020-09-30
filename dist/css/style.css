@@ -99,8 +99,12 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
+}
+a:hover:not(.default-link-hover),
+a:focus {
 	color: #ffffff;
 }
+
 
 ul,
 ol {
@@ -186,6 +190,13 @@ ol {
 	padding: 13px 30px 12px;
 	background: #b98612;
 	border: none;
+	opacity: .9;
+}
+.site-btn:hover{
+	opacity: 1;
+}
+#search{
+	caret-color: #b98612;
 }
 
 /* Preloder */
@@ -638,7 +649,9 @@ ol {
 	line-height: 39px;
 	display: block;
 }
-
+.hero__categories ul li a:hover{
+	color: #b98612;
+}
 .hero__search {
 	overflow: hidden;
 	margin-bottom: 30px;
@@ -766,6 +779,7 @@ ol {
 .categories__item {
 	height: 270px;
 	position: relative;
+	box-shadow: 0px 0px 20px -15px #181818;
 }
 
 .categories__item h5 {
@@ -1050,12 +1064,21 @@ ol {
 	padding: 45px 0 40px;
 }
 
+.breadcrumb__text{
+	background-color:#2e2e2e82;
+}
+
 .breadcrumb__text h2 {
 	font-size: 46px;
-	color: #000;
+	color: rgb(255, 255, 255);
 	font-weight: 700;
-	background-color:#f4e5bf82;
 }
+
+.breadcrumb__text h5{
+	color:rgb(236, 235, 235);
+}
+
+
 
 .breadcrumb__option a {
 	display: inline-block;
@@ -1068,11 +1091,11 @@ ol {
 
 .breadcrumb__option a:after {
 	position: absolute;
-	right: -12px;
+	right: -16px;
 	top: 13px;
 	height: 1px;
 	width: 10px;
-	background: #000;
+	background: #fff;
 	content: "";
 }
 
@@ -1109,6 +1132,10 @@ ol {
 	color: #1c1c1c;
 	line-height: 39px;
 	display: block;
+}
+
+.sidebar__item ul li a:hover{
+	color: #b98612;
 }
 
 .sidebar__item .latest-product__text {
@@ -2340,6 +2367,10 @@ ol {
 	padding: 14px 20px 12px;
 	border-radius: 25px;
 }
+.blog__btn:hover{
+	box-shadow: #b2b2b2  0  0 12px 0 ;
+	transition: 0.3s;
+}
 
 .blog__item__text .blog__btn span {
 	position: relative;
@@ -2679,6 +2710,10 @@ ol {
 	line-height: 32px;
 }
 
+.footer__widget ul li a:hover{
+	color: #b98612;
+}
+
 .footer__widget p {
 	font-size: 14px;
 	color: #1c1c1c;
@@ -2697,6 +2732,7 @@ ol {
 	color: #1c1c1c;
 	height: 46px;
 	border: 1px solid #ededed;
+	caret-color: #b98612 ;
 }
 
 .footer__widget form input::placeholder {
@@ -2918,12 +2954,48 @@ ol {
 	letter-spacing: 2px;
 }
 
+
+/* ------
+  Gallery
+--------*/
+
+/* -------------------------- */
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1;
+	width: 100%;
+	transition: .5s ease;
+	/* opacity:1; */
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.imgContainer:hover .overlay{
+	opacity:1;
+}
+
+.overlay h6 a {
+	color:white;
+}
+.overlay h6 a:hover {
+	color:rgb(226, 220, 220);
+}
+
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
 	}
+	.overlay{
+		opacity:0;
+	}
+	
 }
 
 /* Medium Device = 1200px */
@@ -2952,6 +3024,9 @@ ol {
 	}
 	.shoping__discount form input {
 		width: 240px;
+	}
+	.overlay{
+		opacity:0;
 	}
 }
 
@@ -3443,6 +3518,10 @@ ol {
 	.product-categories-menu{
 		display:none;
 	}
+	.overlay{
+		opacity:1;
+	}
+
 }
 
 /* Small Device = 320px */
@@ -3495,4 +3574,24 @@ ol {
 	.product-categories-menu{
 		display:none;
 	}
+	.overlay{
+		opacity:1;
+	}
 }
+
+/* Sulaimon */
+.hover_lang img, .flag_img{
+	width: 18px;
+	height: 18px;
+}
+.hover_lang button{
+	border:0px solid;
+	width: 100%;
+	height: 100%;
+	background-color: #222222;
+	color: white;
+}
+.hover_lang button:hover{
+	color: #249BC8;
+}
+

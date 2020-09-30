@@ -14,12 +14,16 @@ productsObj = [
 {
     categoryId: 0,    
     category: 'Автогрейдеры',
+    categoryURL: 'category-0.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     products:[]
 },
 
 {
     categoryId: 1,   
     category: 'Автовышки',
+    categoryURL: 'category-1.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products:[]
 },
@@ -27,6 +31,8 @@ productsObj = [
 {    
     categoryId: 2,
     category: 'Автокраны',
+    categoryURL: 'category-2.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: []
     
@@ -34,6 +40,8 @@ productsObj = [
 {    
     categoryId: 3,
     category: 'Асфальто-уклaдчики',
+    categoryURL: 'category-3.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -52,7 +60,7 @@ productsObj = [
             fullName: 'Асфальто-укладчик Volvo ABG 6870',
             productURL: 'product-1-3.html',
             productQuantity: 10,
-            imgURL: 'img/product/1.jpg',
+            imgURL: 'img/product/2.jpg',
             price: 10,
             currency: '$',
         },
@@ -61,6 +69,8 @@ productsObj = [
 {    
     categoryId: 4,
     category: 'Бульдозеры',
+    categoryURL: 'category-4.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -79,7 +89,7 @@ productsObj = [
             fullName: 'Бульдозер John Deere 7',
             productURL: 'product-1-4.html',
             productQuantity: 10,
-            imgURL: 'img/product/1.jpg',
+            imgURL: 'img/product/2.jpg',
             price: 10,
             currency: '$',
         },
@@ -89,6 +99,8 @@ productsObj = [
 {    
     categoryId: 5,
     category: 'Дорожная фреза',
+    categoryURL: 'category-5.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -107,6 +119,8 @@ productsObj = [
 {
     categoryId: 6,
     category: 'Катки',
+    categoryURL: 'category-6.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -145,7 +159,7 @@ productsObj = [
             fullName: 'Асфальтовый каток Volvo SD 160 DX',
             productURL: 'product-3-6.html',
             productQuantity: 10,
-            imgURL: 'img/product/1.jpg',
+            imgURL: 'img/product/2.jpg',
             price: 10,
             currency: '$',
         },
@@ -166,6 +180,8 @@ productsObj = [
 {    
     categoryId: 7,
     category: 'Манипуляторы',
+    categoryURL: 'category-7.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: []
     
@@ -173,6 +189,8 @@ productsObj = [
 {    
     categoryId: 8,
     category: 'Погрузчики',
+    categoryURL: 'category-8.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -181,7 +199,7 @@ productsObj = [
             fullName: 'Погрузчик JCB 4CX',
             productURL: 'product-0-8.html',
             productQuantity: 10,
-            imgURL: 'img/product/1.jpg',
+            imgURL: 'img/product/2.jpg',
             price: 10,
             currency: '$',
             productDetails:
@@ -216,7 +234,7 @@ productsObj = [
             fullName: 'Экскаватор-погрузчик Volvo BL 71',
             productURL: 'product-3-8.html',
             productQuantity: 10,
-            imgURL: 'img/product/1.jpg',
+            imgURL: 'img/product/2.jpg',
             price: 10,
             currency: '$',
         },
@@ -257,6 +275,8 @@ productsObj = [
 {    
     categoryId: 9,
     category: 'Самосвалы',
+    categoryURL: 'category-9.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -276,6 +296,8 @@ productsObj = [
 {    
     categoryId: 10,
     category: 'Тралы',
+    categoryURL: 'category-10.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
@@ -295,6 +317,8 @@ productsObj = [
 {    
     categoryId: 11,
     category: 'Шаланды',
+    categoryURL: 'category-11.html',
+    categoryImgURL: 'img/categories/cat-1.jpg',
     details: ['', '', ''],
     products: [
         // {
@@ -313,6 +337,8 @@ productsObj = [
 {    
     categoryId: 12,
     category: 'Экскаваторы',
+    categoryURL: 'category-12.html',
+    categoryImgURL: 'img/categories/cat-2.jpg',
     details: ['', '', ''],
     products: [
         {
